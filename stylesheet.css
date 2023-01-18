@@ -1,20 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,600;1,100;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,600;1,100;1,300;1,600&family=Rubik:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
 :root {
-    --titlecolor: #707070;
+    --textcolor: #707070;
     --activecolor: #25DFE6;
     --linkcolor: #00C1C9;
     --buttoncolor: #F5F5F5;
     --white: #FFFFFF;
-
+    --linecolor: #B7B7B7;
 }
 
 body {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    width: 60%;
+    margin: 0 auto;
 }
 
 h1 {
-    color: var(--titlecolor);
+    color: var(--textcolor);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--linecolor);
+    padding: 2.5rem;
+}
+
+.resourcecontainer {
+    border: 1px solid var(--linecolor);
+    border-top: 5px solid var(--activecolor);
+    padding-left: 2rem;
+    padding-bottom: 5rem;
 }
 
 .hidden {
@@ -23,9 +36,16 @@ h1 {
 
 .catButton {
     background-color: var(--buttoncolor);
-    color: var(--titlecolor);
-    border: 1px solid var(--titlecolor);
+    color: var(--textcolor);
+    border-top: 1px solid var(--linecolor);
+    border-left: 1px solid var(--linecolor);
+    border-right: 1px solid var(--linecolor);
+    border-bottom: none;
     outline: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-weight: lighter;
 }
 
 .catactive {
@@ -40,14 +60,23 @@ h1 {
     color: black;
 }
 
-article p {
-    color: red;
+.catText {
+    color: var(--textcolor);
+    font-size: 1.1rem;
+    width: 70%;
 }
 
-article p .catName {
-    color: gray;
+.catName {
+    color: var(--textcolor);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 ul li a {
     color: var(--linkcolor);
+    font-size: 1.1rem;
+}
+ul {
+    color: var(--textcolor);
 }

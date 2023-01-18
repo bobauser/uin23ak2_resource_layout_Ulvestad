@@ -21,7 +21,7 @@ window.onload = function() { /*
     resources.map(resource => {
         listHTML += `<article class="hidden">
                 <p class="catName">${resource.category}</p>
-                <p>${resource.text}</p>
+                <p class="catText">${resource.text}</p>
                 <ul>`;
         resource.sources.map(source => {
             listHTML += `<li><a href="${source.url}">${source.title}</a></li>`;
