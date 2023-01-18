@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,600;1,100;1,300;1,600&display=swap');
+
+:root {
+    --titlecolor: #707070;
+    --activecolor: #25DFE6;
+    --linkcolor: #00C1C9;
+    --buttoncolor: #F5F5F5;
+    --white: #FFFFFF;
+
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    color: var(--titlecolor);
+}
+
+.hidden {
+    display: none;
+}
+
+.catButton {
+    background-color: var(--buttoncolor);
+    color: var(--titlecolor);
+    border: 1px solid var(--titlecolor);
+    outline: none;
+}
+
+.catactive {
+    background-color: var(--activecolor);
+    color: var(--white);
+
+    border: none;
+    outline: none;
+}
+
+.info {
+    color: black;
+}
+
+article p {
+    color: red;
+}
+
+article p .catName {
+    color: gray;
+}
+
+ul li a {
+    color: var(--linkcolor);
+}
