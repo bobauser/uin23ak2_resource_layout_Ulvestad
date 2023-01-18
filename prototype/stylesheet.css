@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+
+.catactive {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.catName {
+    color: red;
+}
+
+.redcolor {
+    color: red;
+}
